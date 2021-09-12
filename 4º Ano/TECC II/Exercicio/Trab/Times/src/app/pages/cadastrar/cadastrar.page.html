@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cadastrar Informações</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="_nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Telefone</ion-label>
+      <ion-input type="number" [(ngModel)]="_telefone"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-label position="floating">Time do coração</ion-label>
+    <ion-input type="text" [(ngModel)]="_time_coracao"></ion-input>
+  </ion-item>
+
+  
+  <ion-item>
+    <ion-label position="floating">Time que odeia</ion-label>
+    <ion-input type="text" [(ngModel)]="_time_odiado"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Seleção que torce</ion-label>
+    <ion-input type="text" [(ngModel)]="_selecao"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Nome do seu Idolo</ion-label>
+    <ion-input type="text" [(ngModel)]="_idolo"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Qual posição gosta de jogar no futebol</ion-label>
+    <ion-input type="text" [(ngModel)]="_posicao"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-button expand="full" (click)="cadastrar()">Cadastrar</ion-button>
+  </ion-item>
+</ion-content>
