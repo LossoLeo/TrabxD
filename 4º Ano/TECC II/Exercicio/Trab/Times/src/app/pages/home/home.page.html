@@ -1,7 +1,9 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Informações
+      <span>
+        <strong> Lista de Jogadores </strong>
+      </span>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,20 +11,14 @@
 <ion-content>
 
     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-      <ion-fab-button (click)="cadastrarPage()">
-        <ion-icon name="add"></ion-icon>
+      <ion-fab-button color="dark" (click)="cadastrarPage()">
+        <ion-icon name="people-outline"></ion-icon>
       </ion-fab-button>
     </ion-fab>
 
   <ion-list>
     <ion-item *ngFor = "let times of _dados_times"> 
-      <ion-label lines="none" (click)="detalhar(times)"><b>Nome: </b>{{times.getNome()}}</ion-label>
-      <ion-label lines="none" ><b>Telefone: </b>{{times.getTelefone()}}</ion-label>
-      <ion-label lines="none" ><b>Time do Coração: </b>{{times.getTimeCoracao()}}</ion-label>
-      <ion-label lines="none" ><b>Time odiado: </b>{{times.getTimeOdiado()}}</ion-label>
-      <ion-label lines="none" ><b>Seleção que torce: </b>{{times.getSelecao()}}</ion-label>
-      <ion-label lines="none" ><b>Seu ídolo: </b>{{times.getIdolo()}}</ion-label>
-      <ion-label lines="none" ><b>Posição que joga: </b>{{times.getPosicao()}}</ion-label>
+      <ion-label lines="none" (click)="detalhar(times)"><b>Jogador Deferente:  </b> {{times.getNome()}}</ion-label>
     </ion-item>
     
   </ion-list>

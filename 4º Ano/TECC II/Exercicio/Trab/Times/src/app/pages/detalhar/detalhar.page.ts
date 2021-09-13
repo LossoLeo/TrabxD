@@ -86,4 +86,9 @@ export class DetalharPage implements OnInit {
     const { role } = await alert.onDidDismiss();
   }
 
+  private homepage(): void {
+    this._router.navigate(["/"])
+  }
+
+
 }
